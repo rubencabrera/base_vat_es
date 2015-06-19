@@ -26,15 +26,19 @@
 #
 ##########################################################################
 
+from openerp import models
+
 class ResPartner(models.Model):
 	_inherit = 'res.partner'
 
-	def check_vat_es(self,vat):
+	def check_vat_es(self, vat):
 		"""
-			Verify Spanish VAT numbers. 
+		Verify Spanish VAT numbers. 
 		"""
 		return True
 
-	def check_vat_be(self,vat):
-		"""Trick for BE accounts (which are ALL wrong in our clients DB)"""
+	def check_vat_be(self, vat):
+		"""
+		Trick for BE accounts (which are ALL wrong in a client's DB)
+		"""
 		return True
