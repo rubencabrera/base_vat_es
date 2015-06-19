@@ -34,3 +34,7 @@ class ResPartner(models.Model):
 			Verify Spanish VAT numbers. 
 		"""
 		return True
+
+	def check_vat_be(self,vat):
+		"""Trick for BE accounts (which are ALL wrong in our clients DB)"""
+		return True
