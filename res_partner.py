@@ -37,8 +37,7 @@ class ResPartner(models.Model):
 		"""
 		return True
 
-	def check_vat_be(self, vat):
-		"""
-		Trick for BE accounts (which are ALL wrong in a client's DB)
-		"""
+	def simple_vat_check(self,cr,uid,country_code,vat_number, context=None):
+		"""Main check method override"""
 		return True
+
