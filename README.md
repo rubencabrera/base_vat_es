@@ -2,6 +2,6 @@
 
 Fake Spanish VAT validation, skips validation so migrations don't stop because of errors.
 
-# TODO:
+# Instructions:
 
-Add some REAL validation.
+Install this module and try again importing partners from Spain with a not verified vat number.
